@@ -114,7 +114,7 @@ public class Matrix {
     //       row2       index of specified row
     //Adds row1 multiplied by scalar to row2 and places result in row2
     //row1 * scalar + row2 => row2
-    public void add(int row1, double scalar, int row2) {
+    private void add(int row1, double scalar, int row2) {
         if (inBounds(row1, row2, matrix.length)) {
             for (int col = 0; col < matrix[row1].length; col++) {
                 matrix[row2][col] = matrix[row2][col]
@@ -127,7 +127,7 @@ public class Matrix {
     //@param scalar     value to be multiplied to row
     //       row        index of row to be multiplied by scalar
     //Multiplies every value in the horizontal row by a constant scalar
-    public void multiply(double scalar, int row) {
+    private void multiply(double scalar, int row) {
         if (inBounds(row, matrix.length)) {
             for (int col = 0; col < matrix[row].length; col++) {
                 matrix[row][col] *= scalar;
@@ -140,7 +140,7 @@ public class Matrix {
     //       row2
     //Swaps rows by interchanging values for the corresponding columns of the
     //rows
-    public void swap(int row1, int row2) {
+    private void swap(int row1, int row2) {
         if (inBounds(row1, row2, matrix.length)) {
             double[] temp = createArr(row1);
             replace(row1, createArr(row2));
@@ -152,7 +152,7 @@ public class Matrix {
     //@param row        the specified row to be converted into array
     //@return           the created array
     //Creates an array of doubles from the values of the specified row
-    public double[] createArr(int row) {
+    private double[] createArr(int row) {
         double arr[] = new double[matrix[row].length];
         if (inBounds(row, matrix.length)) {
             for (int col = 0; col < matrix[row].length; col++) {
@@ -166,7 +166,7 @@ public class Matrix {
     //@param row        a specified index of row to be replaced
     //       arr        the array for which to replace the row
     //Replaces values in the row with corresponding values in the array
-    public void replace(int row, double [] arr) {
+    private void replace(int row, double [] arr) {
         if (inBounds(row, matrix.length) && matrix[row].length == arr.length) {
             for (int col = 0; col < matrix[row].length; col++) {
                 matrix[row][col] = arr[col];
@@ -174,14 +174,14 @@ public class Matrix {
         }
     }
 
-    /*public void replace(int row1, int row2) {
+    /*private void replace(int row1, int row2) {
         if (inBounds(row1, row2, matrix.length)) {
             double[] temp = createArr(row1);
             replace(row1, createArr(row2));
         } else error("replace", new String[] {"row1", "row2"});
     }*/
 
-    /*public void sortRows(int col, int bgn, int end) {
+    /*private void sortRows(int col, int bgn, int end) {
         for (int i = end - 1; i > bgn; i--) {
             int maxRow = bgn;
             for (int row = bgn + 1; row <= i; row++)
@@ -200,7 +200,7 @@ public class Matrix {
     //1) If pivot of "1" is found, use it as pivot
     //2) If no "1" is found, use lowest whole number that is not "0"
     //3) If no whole value is found, use any number that is not 0
-    public void setPivot(int col, int bgn, int end) {
+    private void setPivot(int col, int bgn, int end) {
         int pivotRow = end;
         for (int row = bgn; row < end; row++) {
             //Find pivot with leading 1
@@ -232,7 +232,7 @@ public class Matrix {
     //Function: Has Pivot
     //@return           whether there is a pivot (non zero number) in the
     //                  specified column
-    boolean hasPivot(int col, int bgn, int end) {
+    private boolean hasPivot(int col, int bgn, int end) {
         for (int row = bgn; row < end; row++)
             if (matrix[row][col] != 0) return true;
         return false;
@@ -243,7 +243,7 @@ public class Matrix {
     //       var        the names of the parameters of that function
     //Displays an error message if values for parameters of a function are out
     //of bounds of the matrix
-    public void error(String function, String[] var) {
+    private void error(String function, String[] var) {
         System.err.print("Error occurred while executing method '" + function
             + "', ");
         for (int i = 0; i < var.length; i++) {
@@ -258,11 +258,11 @@ public class Matrix {
     //public boolean inBounds(int a, int b, int upBound)
     //public boolean inBounds(int a, int upBound)
 
-    public boolean inBounds(int a, int b, int upBound) {
+    private boolean inBounds(int a, int b, int upBound) {
         return a >= 0 && b >= 0 && a < upBound && b < upBound;
     }
 
-    public boolean inBounds(int a, int upBound) {
+    private boolean inBounds(int a, int upBound) {
         return inBounds(a, 0, upBound);
     }
 

@@ -1,8 +1,8 @@
 # MathTools
 
-MathTools is a simple maths API which provides computation for certain 
-mathematical concepts.
-The project is currently in early development stage and only features matrix
+MathTools is a simple maths API coded in Java which provides computation for 
+certain mathematical concepts.
+The project is currently in early development stages and only features matrix
 arithmetic operations. More elements from linear algebra and calculus will be
 added as time progresses.
 Disclaimer: There are already mathematical computation programs such as Wolfram

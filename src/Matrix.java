@@ -1,5 +1,5 @@
 //-----------------------------MATRIX CLASS-----------------------------------//
-//@author Jack Guo
+//@author TitanJack
 //@version 0.2 (2018-12-18)
 //The matrix class stores matrix objects using 2x2 double floating point arrays
 //and allows for operations to be performed on matrices.
@@ -25,11 +25,7 @@ public class Matrix {
     public Matrix(double [][] matrix, double [] vector) {
         if (matrix.length == vector.length) {
             this.matrix = new double[matrix.length][matrix[0].length + 1];
-            for (int row = 0; row < matrix.length; row++) {
-                for (int col = 0; col < matrix[0].length; col++) {
-                    this.matrix[row][col] = matrix[row][col];
-                }
-            }
+            setSubArray(this.matrix, matrix);
             for (int row = 0; row < matrix.length; row++) {
                 this.matrix[row][matrix[0].length] = vector[row];
             }
@@ -80,7 +76,24 @@ public class Matrix {
     //Changes the matrix to reduced row echelon form
     public void reducedRowEchelon() {
         rowEchelon();
-        int pivotRow = 0;
+        int pivotColCoords[] = getPivotColCoords();
+
+        for (int col = 0; col < pivotColCoords.length; col++) {
+            if (pivotColCoords[col] != -1) {
+                for (int row = pivotColCoords[col] - 1; row >= 0; row--) {
+                    if (matrix[row][col] != 0) {
+                        //"Zero out" values above the pivot value
+                        add(pivotColCoords[col], -matrix[row][col]
+                                / matrix[pivotColCoords[col]][col], row);
+                    }
+                }
+                //Set pivot values to be 1 by scaling row
+                multiply(1 / matrix[pivotColCoords[col]][col],
+                        pivotColCoords[col]);
+            }
+        }
+
+        /*int pivotRow = 0;
         for (int col = 0; col < matrix.length; col++) {
             if (hasPivot(col, pivotRow, matrix.length)) {
                 for (int row = pivotRow - 1; row >= 0; row--) {
@@ -94,7 +107,7 @@ public class Matrix {
                 multiply(1 / matrix[pivotRow][col], pivotRow);
                 pivotRow++;
             }
-        }
+        }*/
     }
 
     //Function: Get Rank
@@ -121,6 +134,7 @@ public class Matrix {
         if (augmented) {
             backupMatrix();
             reducedRowEchelon();
+            System.out.println(toString());
             if (hasSolution()) {
                 String [] solution = new String[matrix[0].length - 1];
                 int pivotColCoords[] = getPivotColCoords();
@@ -502,6 +516,8 @@ public class Matrix {
     //public boolean inBounds(int a, int b, int upBound)
     //public boolean inBounds(int a, int upBound)
     //private double [][] copyArray(double [][] arr)
+    //private double abs(double num)
+    //private void setSubArray(double [][] arr, double [][] subArr)
 
     //Function: In Bounds (1)
     //Checks if the values a and b are between 0 and upBound
@@ -527,13 +543,45 @@ public class Matrix {
         return arrCopy;
     }
 
+    //Function: Absolute Value
+    //@param num    the number to be evaluated
+    //@return       the absolute value of the number
     private double abs(double num) {
         return num >= 0 ? num : -num;
+    }
+
+    //Function: Format
+    //Source: Stack Overflow
+    //@param d      decimal number to be formatted
+    //@return       the formatted string of the number
+    //Formats a given number to remove trailing zeros and convert to integer if
+    //possible
+    public static String format(double d)
+    {
+        if(d == (long) d)
+            return String.format("%d",(long)d);
+        else
+            return String.format("%s",d);
+    }
+
+    //Function: Set Sub Array
+    //@param arr        the array to be iterated by the sub array
+    //       subArr     the sub array
+    //Copies values from the sub array into the array
+    private void setSubArray(double [][] arr, double [][] subArr) {
+        if (subArr.length <= arr.length && subArr[0].length
+                <= arr[0].length)
+            for (int row = 0; row < subArr.length; row++)
+                for (int col = 0; col < subArr[0].length; col++)
+                    arr[row][col] = subArr[row][col];
     }
 
     //---------------------------MISC FUNCTIONS-------------------------------//
     //FUNCTION LIST:
     //public double [][] getMatrixCopy()
+    //public void setMatrixArray(double [][] newMatrix)
+    //public void setMatrixVector(double [] vector)
+    //public void deleteMatrixVector()
     //public String toString()
 
     //Function: Get Matrix
@@ -542,35 +590,75 @@ public class Matrix {
         return copyArray(matrix);
     }
 
-    /*public void setMatrixArray(double [][] newMatrix) {
-        int colBound;
-        if (!augmented) colBound = matrix[0].length;
-        else colBound = matrix[0].length - 1;
-        if (newMatrix.length == matrix.length
-                && newMatrix[0].length == colBound)
-            for (int row = 0; row < matrix[0].length; row++)
-                for (int col = 0; col < matrix[0].length; col++)
-                    matrix[row][col] = newMatrix[row][col];
+    //Function: Set Matrix Array
+    //@param newMatrix      array that stores the new matrix
+    //Sets values from the new array into the matrix array
+    public void setMatrixArray(double [][] newMatrix) {
+        if (newMatrix.length == matrix.length && ((augmented &&
+                newMatrix[0].length == matrix[0].length - 1) || (!augmented
+                && newMatrix[0].length == matrix[0].length)))
+            setSubArray(this.matrix, newMatrix);
     }
 
+    //Function: Set Matrix Vector
+    //@param vector     the array that stores the new vector
+    //Sets values from vector into augmented matrix, if matrix is not augmented,
+    //then create a new array to augment the matrix
     public void setMatrixVector(double [] vector) {
-        if (augmented) {
-
+        if (vector.length == matrix.length) {
+            if (augmented)
+                for (int row = 0; row < matrix.length; row++)
+                    matrix[row][matrix[0].length - 1] = vector[row];
+            else {
+                double augMatrix[][] = new double[matrix.length]
+                        [matrix[0].length + 1];
+                setSubArray(augMatrix, matrix);
+                for (int row = 0; row < matrix.length; row++) {
+                    augMatrix[row][matrix.length] = vector[row];
+                }
+                matrix = augMatrix;
+                augmented = true;
+            }
         }
-    }*/
+    }
+
+    //Function: Delete Matrix Vector
+    //Deletes the vector column and sets the matrix as not augmented
+    public void deleteMatrixVector() {
+        double subMatrix[][] = new double[matrix.length][matrix[0].length - 1];
+        for (int row = 0; row < subMatrix.length; row++)
+            for (int col = 0; col < subMatrix[0].length; col++)
+                subMatrix[row][col] = matrix[row][col];
+        matrix = subMatrix;
+        augmented = false;
+    }
 
     //Function: To String
     //Prints out the matrix in grid form
     public String toString() {
-        String matrixStr = "";
+        String matrixStr[][] = new String[matrix.length][matrix[0].length];
+        int longestInCol [] = new int[matrix[0].length];
+        for (int row = 0; row < matrix.length; row++)
+            for (int col = 0; col < matrix[0].length; col++) {
+                matrixStr[row][col] = format(matrix[row][col]);
+                if (matrixStr[row][col].charAt(0) != '-')
+                    matrixStr[row][col] = " " + matrixStr[row][col];
+                if (matrixStr[row][col].length() > longestInCol[col])
+                    longestInCol[col] = matrixStr[row][col].length() + 2;
+            }
+        String matrixTable = "";
         for (int row = 0; row < matrix.length; row++) {
             for (int col = 0; col < matrix[0].length; col++) {
-                if (augmented && col == matrix[0].length - 1) matrixStr += "|";
-                matrixStr += matrix[row][col] + "\t";
+                if (augmented && col == matrix[0].length - 1)
+                    matrixTable += "| ";
+                matrixTable += matrixStr[row][col];
+                for (int i = 0; i < longestInCol[col] -
+                        matrixStr[row][col].length(); i++)
+                    matrixTable += " ";
             }
-            matrixStr += "\n";
+            matrixTable += "\n";
         }
-        return matrixStr;
+        return matrixTable;
     }
 
     //------------------------------------------------------------------------//

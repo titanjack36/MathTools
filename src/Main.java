@@ -30,7 +30,7 @@ public class Main {
         System.out.println();
 
         System.out.println("-----------------Matrix Solution-----------------");
-        matrix1Arr = new double[][]{{1,0,5,0},{0,1,2,0},{0,0,0,3}};
+        matrix1Arr = new double[][]{{1,0,5,1},{0,1,2,0},{0,0,0,3}};
         vector1 = new double[]{-1,2,-4};
         matrix1 = new Matrix(matrix1Arr, vector1);
         System.out.println("Matrix:\n" + matrix1.toString());
@@ -79,5 +79,13 @@ public class Main {
         System.out.println("Matrix:\n" + matrix1.toString());
         matrix1.inverse();
         System.out.println(">>Inverse\n" + matrix1.toString());
+
+        /*matrix1Arr = new double[][]{{2,1,5},{-1,3,2},{3,0,-2}};
+        matrix1 = new Matrix(matrix1Arr);
+        System.out.println(matrix1.toString());
+        matrix1.setMatrixVector(new double[]{1,2,2});
+        System.out.println(matrix1.toString());
+        matrix1.deleteMatrixVector();
+        System.out.println(matrix1.toString());*/
     }
 }

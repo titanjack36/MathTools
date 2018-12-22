@@ -79,13 +79,5 @@ public class Main {
         System.out.println("Matrix:\n" + matrix1.toString());
         matrix1.inverse();
         System.out.println(">>Inverse\n" + matrix1.toString());
-
-        /*matrix1Arr = new double[][]{{2,1,5},{-1,3,2},{3,0,-2}};
-        matrix1 = new Matrix(matrix1Arr);
-        System.out.println(matrix1.toString());
-        matrix1.setMatrixVector(new double[]{1,2,2});
-        System.out.println(matrix1.toString());
-        matrix1.deleteMatrixVector();
-        System.out.println(matrix1.toString());*/
     }
 }

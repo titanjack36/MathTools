@@ -1,6 +1,6 @@
 //-----------------------------MATRIX CLASS-----------------------------------//
 //@author TitanJack
-//@version 0.2 (2018-12-18)
+//@version 0.3 (2018-12-19)
 //The matrix class stores matrix objects using 2x2 double floating point arrays
 //and allows for operations to be performed on matrices.
 //TODO: calculate determinant and eigenvalues of matrices (difficult)
@@ -550,18 +550,26 @@ public class Matrix {
         return num >= 0 ? num : -num;
     }
 
+    //Function: Round
+    //@param num    the number to be rounded
+    //@return       the rounded value to nearest integer
+    private int round(double num) {
+        return num % 1 < 0.5 ? (int)num : (int)num + 1;
+    }
+
     //Function: Format
-    //Source: Stack Overflow
-    //@param d      decimal number to be formatted
-    //@return       the formatted string of the number
-    //Formats a given number to remove trailing zeros and convert to integer if
-    //possible
-    public static String format(double d)
-    {
-        if(d == (long) d)
-            return String.format("%d",(long)d);
-        else
-            return String.format("%s",d);
+    //@param num    the number to be formatted into string
+    //@return       the formatted string representation of the number
+    //If number is whole, return string integer
+    //If rational, return string fraction approximation
+    private String format(double num) {
+        //Check for errors like: 1.0000000000001 and get rid of decimal place
+        if (abs(round(num) - num) < 0.0000001) num = round(num);
+        if (num == round(num)) return (int)num + ""; //return integer string
+        else {
+            Fraction fracValue = new Fraction(num, 100);
+            return fracValue.toString(); //return fraction string
+        }
     }
 
     //Function: Set Sub Array
@@ -641,10 +649,14 @@ public class Matrix {
         for (int row = 0; row < matrix.length; row++)
             for (int col = 0; col < matrix[0].length; col++) {
                 matrixStr[row][col] = format(matrix[row][col]);
+
+                //Negative sign if negative number
                 if (matrixStr[row][col].charAt(0) != '-')
                     matrixStr[row][col] = " " + matrixStr[row][col];
+                //Get the longest value in the column to calculate spacing
+                //needed to print the matrix
                 if (matrixStr[row][col].length() > longestInCol[col])
-                    longestInCol[col] = matrixStr[row][col].length() + 2;
+                    longestInCol[col] = matrixStr[row][col].length();
             }
         String matrixTable = "";
         for (int row = 0; row < matrix.length; row++) {
@@ -652,8 +664,9 @@ public class Matrix {
                 if (augmented && col == matrix[0].length - 1)
                     matrixTable += "| ";
                 matrixTable += matrixStr[row][col];
+                //Space padding
                 for (int i = 0; i < longestInCol[col] -
-                        matrixStr[row][col].length(); i++)
+                        matrixStr[row][col].length() + 2; i++)
                     matrixTable += " ";
             }
             matrixTable += "\n";

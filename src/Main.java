@@ -1,7 +1,11 @@
+import Functions.*;
+
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[]args) {
-        double matrix1Arr[][];
+        /*double matrix1Arr[][];
         double matrix2Arr[][];
         double vector1[];
         Matrix matrix1;
@@ -78,6 +82,12 @@ public class Main {
         matrix1 = new Matrix(matrix1Arr);
         System.out.println("Matrix:\n" + matrix1.toString());
         matrix1.inverse();
-        System.out.println(">>Inverse\n" + matrix1.toString());
+        System.out.println(">>Inverse\n" + matrix1.toString());*/
+
+        FunctionConstructor fc = new FunctionConstructor();
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter an expression:");
+        Function func = fc.toFunctionDebug(input.next());
+        System.out.println(func.toString());
     }
 }

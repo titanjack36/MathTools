@@ -1,16 +1,26 @@
+//---------------------------GEOFUNCTION CLASS--------------------------------//
+//@author TitanJack
+//@project MathTools
+//Any multiplication that exists in the expression can be characterized as a
+//geometric function. Eg. <(x+1)(x-1)>, <3x>, <pi*x>, etc
+
 package Functions;
+
+import NumberFormats.Numbers;
 
 public class GeoFunction extends Function{
 
-    private Function geoArr[];
+    private Function[] geoArr;
     private double coeff;
 
-    public GeoFunction(Function geoArr[]) {
+    @SuppressWarnings("WeakerAccess")
+    public GeoFunction(Function[] geoArr) {
         this.geoArr = geoArr;
         coeff = 1;
     }
 
-    public GeoFunction(Function geoArr[], double coeff) {
+    @SuppressWarnings("unused")
+    public GeoFunction(Function[] geoArr, double coeff) {
         this.geoArr = geoArr;
         this.coeff = coeff;
     }
@@ -33,9 +43,10 @@ public class GeoFunction extends Function{
 
     public String toString() {
         String funcStr = "";
-        for (int i = 0; i < geoArr.length; i++)
-            funcStr += "(" + geoArr[i].toString() + ")";
-        if (coeff != 1) funcStr = coeff + funcStr;
+        for (Function subFunc : geoArr)
+            funcStr += "(" + subFunc.toString() + ")";
+        if (coeff == -1) funcStr = "-" + funcStr;
+        else if (coeff != 1) funcStr = Numbers.formatNum(coeff) + funcStr;
         return funcStr;
     }
 }

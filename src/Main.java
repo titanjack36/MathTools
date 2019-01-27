@@ -1,4 +1,16 @@
+//------------------------------MATH TOOLS------------------------------------//
+//@author TitanJack
+//@version 1.1 (2019-01-23)
+//MathTools is a simple maths API coded in Java which provides computation for
+//certain mathematical concepts. The project is currently in early development
+//stages and only features matrix arithmetic operations. More elements from
+//linear algebra and calculus will be added as time progresses. Disclaimer:
+//There are already mathematical computation programs such as Wolfram Alpha and
+//Apache API which are more efficient and powerful than this program. This
+//project was developed as a hobby and not meant to be used professionally.
+
 import Functions.*;
+import NumberFormats.Numbers;
 
 import java.util.Scanner;
 
@@ -86,8 +98,13 @@ public class Main {
 
         FunctionConstructor fc = new FunctionConstructor();
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter an expression:");
-        Function func = fc.toFunctionDebug(input.next());
-        System.out.println(func.toString());
+        while (true) {
+            System.out.println("Enter an expression:");
+            Function func = fc.toFunctionDebug(input.nextLine());
+            System.out.println("f(x) = " + func.toString());
+            int computeNum = 6;
+            System.out.println("f(" + 6 + ") = " + Numbers.formatNum(
+                    func.compute(computeNum)) + "\n");
+        }
     }
 }

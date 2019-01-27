@@ -1,9 +1,11 @@
 //----------------------------FRACTION CLASS----------------------------------//
 //@author TitanJack
-//@version 0.1 (2018-12-21)
-//The fraction class is able to decimal expressions into fraction representation
-//using rational approximation. It stores fractions as objects and can perform
-//operations with fractions.
+//@project MathTools
+//The fraction class is able to convert decimal expressions into fraction
+//representation using rational approximation. It stores fractions as objects
+// and can perform operations with fractions.
+
+package NumberFormats;
 
 public class Fraction {
 
@@ -53,10 +55,10 @@ public class Fraction {
 
     //---------------------------CORE FUNCTIONS-------------------------------//
     //FUNCTION LIST:
-    //public void addBy(Fraction other)
-    //public void subtractBy(Fraction other)
-    //public void multiplyBy(Fraction other)
-    //public void divideBy(Fraction other)
+    //public void addBy(NumberFormats.Fraction other)
+    //public void subtractBy(NumberFormats.Fraction other)
+    //public void multiplyBy(NumberFormats.Fraction other)
+    //public void divideBy(NumberFormats.Fraction other)
     //public void negate()
     //private void simplify()
 

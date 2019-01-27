@@ -1,10 +1,19 @@
+//---------------------------EXPONENTIAL CLASS--------------------------------//
+//@author TitanJack
+//@project MathTools
+//Exponents take the form <base>^<exponent>, both the base and exponent can be
+//formed by individual expressions. For example, (x+1)^(4x) is an exponent
+
 package Functions;
 
+import NumberFormats.Numbers;
+
 public class Exponential extends Function{
-    double coeff;
+    private double coeff;
     private Function baseFunc;
     private Function exponentFunc;
 
+    @SuppressWarnings("WeakerAccess")
     public Exponential(Function baseFunc, Function exponentFunc) {
         this.baseFunc = baseFunc;
         this.exponentFunc = exponentFunc;
@@ -31,9 +40,10 @@ public class Exponential extends Function{
     }
 
     public String toString() {
-        String funcStr = "((" + baseFunc.toString() + ")^(" +
-                exponentFunc.toString() + "))";
-        if (coeff != 1) funcStr = coeff + funcStr;
+        String funcStr = "(" + baseFunc.toString() + ")^(" +
+                exponentFunc.toString() + ")";
+        if (coeff == -1) funcStr = "-" + funcStr;
+        else if (coeff != 1) funcStr = Numbers.formatNum(coeff) + funcStr;
         return funcStr;
     }
 }

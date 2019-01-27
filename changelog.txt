@@ -1,0 +1,8 @@
+MathTools V1.1
+- Added functionality to FunctionConstructor expression parser:
+	- Can now parse trigonometric, logarithmic and square root functions, and math constants
+- Fixed bugs:
+	- An expression with subtraction getting converted into addition
+	- Unable to represent negative numbers
+	- Dividing by negative denominator will register as subtraction
+	- A negative exponent will register as subtraction

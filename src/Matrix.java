@@ -1,12 +1,11 @@
 //-----------------------------MATRIX CLASS-----------------------------------//
 //@author TitanJack
-//@version 0.3 (2018-12-19)
+//@project MathTools
 //The matrix class stores matrix objects using 2x2 double floating point arrays
 //and allows for operations to be performed on matrices.
-//TODO: calculate determinant and eigenvalues of matrices (difficult)
-//TODO: fix toString method to print matrix in better form
-//TODO: add rounding and fractions (?)
-//TODO: add functionality for changing matrices
+
+import NumberFormats.Fraction;
+import NumberFormats.Numbers;
 
 public class Matrix {
     private double matrix[][];
@@ -517,6 +516,7 @@ public class Matrix {
     //public boolean inBounds(int a, int upBound)
     //private double [][] copyArray(double [][] arr)
     //private double abs(double num)
+    //private int round(double num)
     //private void setSubArray(double [][] arr, double [][] subArr)
 
     //Function: In Bounds (1)
@@ -555,21 +555,6 @@ public class Matrix {
     //@return       the rounded value to nearest integer
     private int round(double num) {
         return num % 1 < 0.5 ? (int)num : (int)num + 1;
-    }
-
-    //Function: Format
-    //@param num    the number to be formatted into string
-    //@return       the formatted string representation of the number
-    //If number is whole, return string integer
-    //If rational, return string fraction approximation
-    private String format(double num) {
-        //Check for errors like: 1.0000000000001 and get rid of decimal place
-        if (abs(round(num) - num) < 0.0000001) num = round(num);
-        if (num == round(num)) return (int)num + ""; //return integer string
-        else {
-            Fraction fracValue = new Fraction(num, 100);
-            return fracValue.toString(); //return fraction string
-        }
     }
 
     //Function: Set Sub Array
@@ -648,7 +633,7 @@ public class Matrix {
         int longestInCol [] = new int[matrix[0].length];
         for (int row = 0; row < matrix.length; row++)
             for (int col = 0; col < matrix[0].length; col++) {
-                matrixStr[row][col] = format(matrix[row][col]);
+                matrixStr[row][col] = Numbers.formatNum(matrix[row][col]);
 
                 //Negative sign if negative number
                 if (matrixStr[row][col].charAt(0) != '-')

@@ -1,3 +1,8 @@
+//----------------------------FUNCTION CLASS----------------------------------//
+//@author TitanJack
+//@project MathTools
+//A blueprint class for all types of functions, includes core methods
+
 package Functions;
 
 public abstract class Function {

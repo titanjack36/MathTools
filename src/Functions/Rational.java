@@ -16,9 +16,7 @@ public class Rational extends Function {
 
     @SuppressWarnings("WeakerAccess")
     public Rational(Function n, Function d) {
-        numerator = n;
-        denominator = d;
-        coeff = 1;
+        this(n, d, 1);
     }
 
     @SuppressWarnings("unused")
@@ -28,8 +26,25 @@ public class Rational extends Function {
         this.coeff = coeff;
     }
 
+    public Rational(double n, Function d, double coeff) {
+        this(new Constant(n), d, coeff);
+    }
+
+    public Rational(double n, Function d) {
+        this(n, d, 1);
+    }
+
     public double compute(double x) {
         return coeff * numerator.compute(x) / denominator.compute(x);
+    }
+
+    public Function differentiate() {
+        //Uses rational differentiation formula.
+        //d/dx(f(x)/g(x))=(f'(x)g(x)-f(x)g'(x))/(g(x))^2
+        return new Rational(new SumFunction(new Function[] {
+                new GeoFunction(numerator.differentiate(), denominator),
+                new GeoFunction(numerator, denominator.differentiate(), -1)
+        }), new Exponential(denominator, 2), coeff);
     }
 
     public double getCoeff() {

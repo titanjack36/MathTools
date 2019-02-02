@@ -21,6 +21,10 @@ public class Constant extends Function{
         return constVal;
     }
 
+    public Function differentiate() {
+        return new Constant(0);
+    }
+
     public double getCoeff() {
         return constVal >= 0 ? 1 : -1;
     }

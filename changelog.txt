@@ -1,4 +1,10 @@
-MathTools V1.1
+MathTools V1.2 (2019-02-02)
+- Added functionality to Functions package:
+    - Differentiation for all functions
+    - Ability to perform basic simplification for sum and geometric functions
+    - Improved the function printing format to be simpler
+
+MathTools V1.1 (2019-01-23)
 - Added functionality to FunctionConstructor expression parser:
 	- Can now parse trigonometric, logarithmic and square root functions, and math constants
 - Fixed bugs:

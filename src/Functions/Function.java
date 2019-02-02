@@ -9,6 +9,8 @@ public abstract class Function {
 
     public abstract double compute(double x);
 
+    public abstract Function differentiate();
+
     public abstract double getCoeff();
 
     public abstract Function setCoeff(double c);

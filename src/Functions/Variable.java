@@ -13,7 +13,7 @@ public class Variable extends Function {
 
     @SuppressWarnings("unused")
     public Variable() {
-        coeff = 1;
+        this(1);
     }
 
     @SuppressWarnings("WeakerAccess")
@@ -23,6 +23,10 @@ public class Variable extends Function {
 
     public double compute(double x) {
         return coeff * x;
+    }
+
+    public Function differentiate() {
+        return new Constant(coeff);
     }
 
     public double getCoeff() {

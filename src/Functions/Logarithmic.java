@@ -11,8 +11,7 @@ public class Logarithmic extends Function {
     private double coeff;
 
     public Logarithmic(Function subFunc) {
-        this.subFunc = subFunc;
-        coeff = 1;
+        this(subFunc, 1);
     }
 
     public Logarithmic(Function subFunc, double coeff) {
@@ -22,6 +21,11 @@ public class Logarithmic extends Function {
 
     public double compute(double x) {
         return Math.log(subFunc.compute(x));
+    }
+
+    public Function differentiate() {
+        //d/dx(log(f(x)))=f'(x)/f(x)
+        return new Rational(subFunc.differentiate(), subFunc, coeff);
     }
 
     public double getCoeff() {

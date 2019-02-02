@@ -11,8 +11,7 @@ public class MathConstant extends Function{
     private double coeff;
 
     public MathConstant(String constant) {
-        this.constant = constant;
-        coeff = 1;
+        this(constant, 1);
     }
 
     public MathConstant(String constant, double coeff) {
@@ -27,6 +26,10 @@ public class MathConstant extends Function{
         }
         System.exit(0);
         return 0;
+    }
+
+    public Function differentiate() {
+        return new Constant(0);
     }
 
     public double getCoeff() {

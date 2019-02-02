@@ -9,6 +9,8 @@ package Functions;
 import java.util.ArrayList;
 import java.util.Stack;
 
+//2x^2+3x+1
+
 public class FunctionConstructor {
 
     private boolean DEBUG = false;

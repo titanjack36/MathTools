@@ -3,32 +3,34 @@
   <component name="ChangeListManager">
     <list default="true" id="e3bf8c29-ed93-46c6-b499-684c9311b62c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MathTools/Fraction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MathTools/Functions/Algebraic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changelog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/changelog.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MathTools/Functions/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MathTools/Functions/Constant.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MathTools/Functions/Exponential.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MathTools/Functions/Exponential.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MathTools/Functions/Function.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MathTools/Functions/Function.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MathTools/Functions/FunctionConstructor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MathTools/Functions/FunctionConstructor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MathTools/Functions/GeoFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MathTools/Functions/GeoFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MathTools/Functions/Power.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MathTools/Functions/Logarithmic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MathTools/Functions/Logarithmic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MathTools/Functions/MathConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MathTools/Functions/MathConstant.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MathTools/Functions/Rational.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MathTools/Functions/Rational.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MathTools/Functions/SumFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MathTools/Functions/SumFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MathTools/Functions/Trignometric.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MathTools/Functions/Variable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MathTools/Functions/Variable.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MathTools/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MathTools/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MathTools/Matrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MathTools/Matrix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumberFormats/Fraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/Algebraic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MathTools/NumberFormats/Fraction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MathTools/NumberFormats/Fraction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MathTools/NumberFormats/Numbers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MathTools/NumberFormats/Numbers.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Functions/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/Constant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Functions/Exponential.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/Exponential.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Functions/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/Function.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Functions/FunctionConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/FunctionConstructor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Functions/GeoFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/GeoFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/Power.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Functions/Logarithmic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/Logarithmic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Functions/MathConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/MathConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Functions/Rational.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/Rational.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Functions/SumFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/SumFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Functions/Trigonometric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/Trigonometric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Functions/Variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/Variable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,12 +42,35 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Functions/Rational.java">
+        <entry file="file://$PROJECT_DIR$/src/Functions/GeoFunction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+            <state relative-caret-position="513">
+              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
               <folding>
-                <element signature="e#0#1289#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2897#2898#0" expanded="true" />
+                <element signature="e#2956#2957#0" expanded="true" />
+                <element signature="e#3016#3017#0" expanded="true" />
+                <element signature="e#3055#3056#0" expanded="true" />
+                <element signature="e#3113#3114#0" expanded="true" />
+                <element signature="e#3166#3167#0" expanded="true" />
+                <element signature="e#4008#4009#0" expanded="true" />
+                <element signature="e#4036#4037#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Functions/Trigonometric.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1350">
+              <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+              <folding>
+                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#7269#7270#0" expanded="true" />
+                <element signature="e#7297#7298#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,29 +79,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Functions/SumFunction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Functions/Trigonometric.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
+            <state relative-caret-position="162">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
-                <element signature="e#0#2564#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Functions/Rational.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="945">
+              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+              <folding>
+                <element signature="e#535#536#0" expanded="true" />
+                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#890#891#0" expanded="true" />
+                <element signature="e#919#920#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FunctionCompute.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Functions/FunctionConstructor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="183" column="38" lean-forward="true" selection-start-line="183" selection-start-column="38" selection-end-line="183" selection-end-column="38" />
+            <state relative-caret-position="1350">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,27 +127,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Functions/Logarithmic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Functions/Variable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Matrix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13851">
-              <caret line="518" column="35" selection-start-line="518" selection-start-column="35" selection-end-line="518" selection-end-column="35" />
+            <state relative-caret-position="513">
+              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
               <folding>
+                <element signature="e#348#349#0" expanded="true" />
+                <element signature="e#380#381#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#4933#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -115,30 +151,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NumberFormats/Fraction.java">
+        <entry file="file://$PROJECT_DIR$/changelog.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+            <state>
+              <caret column="26" selection-start-column="26" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NumberFormats/Numbers.java">
+        <entry file="file://$PROJECT_DIR$/src/Functions/MathConstant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+            <state relative-caret-position="243">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#394#395#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -181,27 +209,32 @@
         <option value="$PROJECT_DIR$/src/Polynomial.java" />
         <option value="$PROJECT_DIR$/src/Functions/Polynomial.java" />
         <option value="$PROJECT_DIR$/src/Functions/Algebraic.java" />
-        <option value="$PROJECT_DIR$/src/Functions/Power.java" />
         <option value="$PROJECT_DIR$/src/Fraction.java" />
         <option value="$PROJECT_DIR$/src/NumberManager.java" />
         <option value="$PROJECT_DIR$/src/Numbers.java" />
         <option value="$PROJECT_DIR$/src/Functions/Transcendental.java" />
-        <option value="$PROJECT_DIR$/src/Functions/Constant.java" />
-        <option value="$PROJECT_DIR$/src/Functions/Exponential.java" />
-        <option value="$PROJECT_DIR$/src/Functions/Function.java" />
-        <option value="$PROJECT_DIR$/src/Functions/GeoFunction.java" />
-        <option value="$PROJECT_DIR$/src/Functions/Logarithmic.java" />
-        <option value="$PROJECT_DIR$/src/Functions/MathConstant.java" />
-        <option value="$PROJECT_DIR$/src/Functions/Rational.java" />
-        <option value="$PROJECT_DIR$/src/Functions/SumFunction.java" />
         <option value="$PROJECT_DIR$/src/Functions/Trignometric.java" />
-        <option value="$PROJECT_DIR$/src/Functions/Trigonometric.java" />
-        <option value="$PROJECT_DIR$/src/Functions/Variable.java" />
         <option value="$PROJECT_DIR$/src/NumberFormats/Fraction.java" />
         <option value="$PROJECT_DIR$/src/NumberFormats/Numbers.java" />
         <option value="$PROJECT_DIR$/src/Matrix.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Functions/Function.java" />
+        <option value="$PROJECT_DIR$/src/Functions/Constant.java" />
+        <option value="$PROJECT_DIR$/src/NewtonApproximation.java" />
+        <option value="$PROJECT_DIR$/src/Functions/Power.java" />
         <option value="$PROJECT_DIR$/src/Functions/FunctionConstructor.java" />
+        <option value="$PROJECT_DIR$/src/Functions/Variable.java" />
+        <option value="$PROJECT_DIR$/src/Functions/MathConstant.java" />
+        <option value="$PROJECT_DIR$/src/Functions/Trigonometric.java" />
+        <option value="$PROJECT_DIR$/src/Functions/Logarithmic.java" />
+        <option value="$PROJECT_DIR$/src/Functions/GeoFunction.java" />
+        <option value="$PROJECT_DIR$/src/Functions/Exponential.java" />
+        <option value="$PROJECT_DIR$/src/MathCalc.java" />
+        <option value="$PROJECT_DIR$/src/Compute.java" />
+        <option value="$PROJECT_DIR$/src/Functions/SumFunction.java" />
+        <option value="$PROJECT_DIR$/src/Functions/Rational.java" />
+        <option value="$PROJECT_DIR$/src/FunctionCompute.java" />
+        <option value="$PROJECT_DIR$/changelog.txt" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -212,10 +245,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-447" />
-    <option name="y" value="-18" />
-    <option name="width" value="3027" />
-    <option name="height" value="1947" />
+    <option name="x" value="72" />
+    <option name="y" value="-30" />
+    <option name="width" value="1944" />
+    <option name="height" value="1044" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -225,7 +258,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -247,24 +279,19 @@
             </path>
             <path>
               <item name="MathTools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MathTools" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="NumberFormats" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MathTools" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/jackg/Documents/Google Drive/Documents/Code/Java/IntellijProjects/MathTools/desktop.ini&#10;setPivot&#9;PSI&#9;JAVA://Matrix#setPivot" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548628514641" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549125463855" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IdentityGenerator" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RunDashboard">
@@ -306,10 +333,19 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2575" height="1415" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12365805" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23747016" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -318,14 +354,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32858837" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.34372565" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.37363493" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990647" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32917318" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32977462" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.32858837" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32977462" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32917318" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -366,106 +402,9 @@
     <entry file="file://$PROJECT_DIR$/src/Rational.java" />
     <entry file="file://$PROJECT_DIR$/src/Polynomial.java" />
     <entry file="file://$PROJECT_DIR$/src/desktop.ini" />
-    <entry file="file://$PROJECT_DIR$/src/Functions/Power.java" />
     <entry file="file://$PROJECT_DIR$/src/Functions/Algebraic.java" />
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Functions/Exponential.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#1429#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Functions/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Functions/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#831#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Functions/GeoFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#1378#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Functions/MathConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="75" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#1106#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/changelog.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Functions/Rational.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#1289#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Functions/SumFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Functions/Trigonometric.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#2564#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Functions/Variable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13851">
-          <caret line="518" column="35" selection-start-line="518" selection-start-column="35" selection-end-line="518" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NumberFormats/Fraction.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -481,10 +420,127 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Functions/Power.java" />
+    <entry file="file://$PROJECT_DIR$/src/Functions/SquareRoot.java" />
+    <entry file="file://$PROJECT_DIR$/src/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        <state relative-caret-position="1178">
+          <caret line="518" column="35" selection-start-line="518" selection-start-column="35" selection-end-line="518" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Functions/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Functions/Exponential.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="91" column="23" lean-forward="true" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+          <folding>
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#1036#1037#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#2553#2554#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Functions/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding>
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Functions/Variable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Functions/GeoFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2897#2898#0" expanded="true" />
+            <element signature="e#2956#2957#0" expanded="true" />
+            <element signature="e#3016#3017#0" expanded="true" />
+            <element signature="e#3055#3056#0" expanded="true" />
+            <element signature="e#3113#3114#0" expanded="true" />
+            <element signature="e#3166#3167#0" expanded="true" />
+            <element signature="e#4008#4009#0" expanded="true" />
+            <element signature="e#4036#4037#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Functions/Trigonometric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+          <folding>
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#7269#7270#0" expanded="true" />
+            <element signature="e#7297#7298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Functions/SumFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Functions/Rational.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="e#535#536#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FunctionCompute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Functions/FunctionConstructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -493,16 +549,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Functions/Logarithmic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="513">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding>
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Functions/FunctionConstructor.java">
+    <entry file="file://$PROJECT_DIR$/changelog.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="183" column="38" lean-forward="true" selection-start-line="183" selection-start-column="38" selection-end-line="183" selection-end-column="38" />
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Functions/MathConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
           <folding>
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#4933#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
